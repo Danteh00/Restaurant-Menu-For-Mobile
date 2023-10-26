@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" href="armodies.png"  id="armodies"  type="image/x-icon">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        header{
+            background-color: bisque;
+            padding: 10% 2.5%;
+            height: auto;
+            margin-right: -3% 
+        }
+        nav{
+            display: inline-block;
+            width: calc(100% - 1.3%);
+            text-align: right;
+        }
+        nav ul{
+            list-style-type: none;
+
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 1% 2.5%;
+        }
+        .menu{
+            color: black;
+
+            font-weight: bold;
+            font-size: 25px;
+        }   
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(107, 37, 19);
+            padding: 1.5% 1.5%;
+            font-size: 19px;
+        }
+        nav ul li a:hover{
+            background-color: antiquewhite;
+            color: rgb(68, 11, 100);
+        }
+
+
+        #section-1{
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(
+                0,0,0,0.8)), url(20231021_123409.jpg);
+             background-position: top;  
+             padding: 3%; 
+            height: 1200px;
+            width: 100%;
+            background-size: cover;
+            padding-right: 100%;
+            
+        }  
+        .btn-s1{
+            margin-left: 0%;
+            margin-top: 0%;
+            background-color: bisque;
+            color: #fff;
+            padding: 1.5% 1.4%;
+            font-size: 30px;
+            border-radius: 6px;
+            transition: color 1s;
+            width: 135px;
+            height: 75px;
+        } 
+        .btn-s1:hover {
+            color: black;
+        }
+        /*card*/
+        #section-2{
+            display: flex;  
+            justify-content: space-around;
+            margin: 45% 0;
+            width: 160%;
+            margin-left: -29%;
+            margin-top: 50%;
+        }
+        .card{
+            width: 45%;
+            box-shadow: 0 19px 9px 0 rgba(0,0,0,0.4);
+            border-radius: 4px;
+        }
+        .card:hover{
+            opacity: 0.7;
+        }
+        .container{
+            padding: 0.5% 2%;
+        }
+        .container p{
+            margin: 1.5% 0;
+        }
+        img{
+            border-radius: 6px 6px 0 0;
+            width: 100%;
+        }
+        p{
+            font-size: 99%
+        }
+        .armodies{
+            text-align: center;
+            width: 60%;
+            margin: 10%;
+            margin-top: -5%;
+        }
+        #section-3{
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0px;
+            width: 160%;
+            margin-left: -29%;
+            margin-top: 10%
+        }
+        footer{
+            background-color: bisque;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 0;
+        }
+        .menu{
+            background-color: bisque;
+            position: absolute;
+            margin: auto;
+            margin-left: 0.3%;
+            font-size: 840%;
+            color: rgb(107, 37, 19);
+            padding: auto;
+
+           
+        }
+        h2{
+            font-size: 100%;
+        }
+       
+        ul{
+            font-size: auto;
+            width: 0%;
+            padding-left: auto;
+            padding-top: auto;
+        }
+    </style>
+
+<script>
+    document.querySelectorAll('a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <img class="armodies" src="armodies.png"  alt="">
+        <nav>
+            <ul>
+                <li><a href="#tostlar" id="tost">►TOST ÇEŞİTLERİ</a></li>
+                <br><br>
+                <li><a href="#atistirmaliklar">►ATIŞTIRMALIKLAR</a></li>
+                <br><br>
+                <li><a href="#sicaklar">►SICAK İÇECEKLER</a></li>
+                <br><br>
+                <li><a href="#mesrubatlar">►MEŞRUBATLAR</a></li>
+                <br><br>
+                <li><a href="#kahvalti">►KAHVALTI ÇEŞİTLŞERİ</a></li>
+                <br><br>
+                <li><a href="#tatli">►TATLI ÇEŞİTLERİ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-1">
+            <button class="btn-s1"><a href="#menu">MENÜ</a></button>
+        </section>
+
+
+
+        <div>
+            <h1 class="menu" style="text-align: center;" id="menu">MENÜ</h1>
+        </div>   
+
+
+        <section id="section-2">
+            <div class="card">
+                <img src="serpmekahvalti.jpg"
+                id="kahvalti"
+                alt="">
+                <div class="container">
+                 <h2>KAHVALTI ÇEŞİTLERİ</h2>  
+                 <br>
+                 <p>Serpme Kahvaltı</p>
+                 <p>350 ₺</p>  
+                 <br>
+                 <p>Tek Kişilik Kahvaltı</p>
+                 <p>160 ₺</p> 
+                 <br>
+                 <p>Sahanda Yumurta</p>
+                 <p>80 ₺</p>             
+                </div>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <div class="card">
+                <img src="20231021_134000.jpg" 
+                id="tostlar"
+                alt="">
+                <div class="container">
+                    <h2>TOST ÇEŞİTLERİ</h2>   
+                    <br>
+                    <p>Karışık Tost</p>
+                    <p>60 ₺</p>
+                    <br>
+                    <p>Kaşarlı Tost</p>
+                    <p>60 ₺</p>                
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="section-3">
+            <div class="card">
+                <img src="20231021_111316.jpg" 
+                id="sicaklar"
+                alt="">
+                <div class="container">
+                    <h2>SICAK İÇECEKLER</h2>   
+                    <br>
+                    <p>Çay</p>
+                    <p>10 ₺</p>
+                    <br>
+                    <p>Fincan Çay</p>
+                    <p>20 ₺</p>  
+                    <br>
+                    <p>Kuşburnu</p>
+                    <p>10 ₺</p>
+                    <br>
+                    <p>Oralet</p>
+                    <p>10 ₺</p>
+                    <br>
+                    <p>Kivi</p>
+                    <p>10 ₺</p>
+                    <br>
+                    <p>Türk Kahvesi</p>
+                    <p>35 ₺</p>
+                    <br>
+                    <p>Sıcak Çikolata</p>
+                    <p>50 ₺</p>              
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section-3">
+            <div class="card">
+                <img src="cips.jpg"
+                id="atistirmaliklar"
+                alt="">
+                <div class="container">
+                    <h2>ATIŞTIRMALIKLAR</h2>   
+                    <br>
+                    <p>Cips</p>
+                    <p>80 ₺</p>
+                    <br>
+                    <p>Hamburger</p>  
+                    <p>80 ₺</p>
+                    <br>
+                    <p>Gözleme</p>
+                    <p>80 ₺</p>           
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section-2">
+            <div class="card">
+                <img src="tatli.jpg"
+                id="tatli"
+                alt="">
+                <div class="container">
+                 <h2>TATLI ÇEŞİTLERİ</h2>  
+                 <br>
+                 <p>limonlu Cheesecake</p>
+                 <p>90 ₺</p>  
+                 <br>
+                 <p>Tiramisu</p>
+                 <p>90 ₺</p> 
+                 <br>   
+                <p>Frambuazlı Pasta</p>
+                <p>90 ₺</p>
+                <br>
+                <p>Devil</p>
+                <p>90 ₺</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="section-2">
+            <div class="card">
+                <img src="1000013956-01.jpeg" 
+                id="mesrubatlar"
+                alt="">
+                <div class="container">
+                    <h2>MEŞRUBATLAR</h2>   
+                    <br>
+                    <p>Ayran</p>
+                    <p>25 ₺</p>
+                    <br>
+                    <p>Soda</p>
+                    <p>25 ₺</p> 
+                    <br>
+                    <p>Coca Cola</p>
+                    <p>35 ₺</p>
+                    <br>
+                    <p>Fanta</p>
+                    <p>35 ₺</p>
+                    <br>
+                    <p>Uludağ Gazoz</p>
+                    <p>35 ₺</p>
+                    <br>
+                    <p>Lipton Ice Tea</p>
+                    <p>35 ₺</p>
+                    <br>
+                    <p>Su</p>
+                    <p>10 ₺</p>               
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/armodies/reels/" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
